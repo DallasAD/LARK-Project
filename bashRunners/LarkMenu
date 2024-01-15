@@ -1,0 +1,61 @@
+#!/bin/bash
+clear
+echo '
+                    ___           ___           ___           ___           ___           ___           ___           ___           ___           ___
+     _____         /  /\         /  /\         /__/\         /  /\         /__/\         /__/\         /__/\         /  /\         /  /\         /  /\
+    /  /::\       /  /::\       /  /:/_        \  \:\       /  /::\        \  \:\        \  \:\        \  \:\       /  /:/_       /  /::\       /  /:/_
+   /  /:/\:\     /  /:/\:\     /  /:/ /\        \__\:\     /  /:/\:\        \  \:\        \  \:\        \  \:\     /  /:/ /\     /  /:/\:\     /  /:/ /\
+  /  /:/~/::\   /  /:/~/::\   /  /:/ /::\   ___ /  /::\   /  /:/~/:/    ___  \  \:\   _____\__\:\   _____\__\:\   /  /:/ /:/_   /  /:/~/:/    /  /:/ /::\
+ /__/:/ /:/\:| /__/:/ /:/\:\ /__/:/ /:/\:\ /__/\  /:/\:\ /__/:/ /:/___ /__/\  \__\:\ /__/::::::::\ /__/::::::::\ /__/:/ /:/ /\ /__/:/ /:/___ /__/:/ /:/\:\
+ \  \:\/:/~/:/ \  \:\/:/__\/ \  \:\/:/~/:/ \  \:\/:/__\/ \  \:\/:::::/ \  \:\ /  /:/ \  \:\~~\~~\/ \  \:\~~\~~\/ \  \:\/:/ /:/ \  \:\/:::::/ \  \:\/:/~/:/
+  \  \::/ /:/   \  \::/       \  \::/ /:/   \  \::/       \  \::/~~~~   \  \:\  /:/   \  \:\  ~~~   \  \:\  ~~~   \  \::/ /:/   \  \::/~~~~   \  \::/ /:/
+   \  \:\/:/     \  \:\        \__\/ /:/     \  \:\        \  \:\        \  \:\/:/     \  \:\        \  \:\        \  \:\/:/     \  \:\        \__\/ /:/
+    \  \::/       \  \:\         /__/:/       \  \:\        \  \:\        \  \::/       \  \:\        \  \:\        \  \::/       \  \:\         /__/:/
+     \__\/         \__\/         \__\/         \__\/         \__\/         \__\/         \__\/         \__\/         \__\/         \__\/         \__\/
+'
+echo
+echo
+echo
+#while [[ $REPLY != 0 ]]; do
+tput cup 15 60; tput smul; echo "Please select an option:"; tput rmul
+tput cup 16 65; echo "1. Run Game"
+tput cup 17 65; echo "2. Credits"
+tput cup 18 65; echo "3. Exit"
+tput cup 35 1;tput civis; read -p "Enter selection: " selection; tput cnorm
+case $selection in
+1)
+mv ReadMeFirst .ReadMeFirst
+clear
+echo Loading...
+sleep 2
+source .cadetInitiation.sh
+;;
+2)
+clear
+echo "
+Developers: Brenna Holloway, Dallas Desimone, Elijay Fraley, Kelsea Canaday"
+echo "
+ASCII Art:
+Patrick Gillespie
+	https://patorjk.com/software/taag/#p=testall&h=3&f=Babyface%20Lame&t=GAME%20OVER
+
+ASCII Art Achive
+	https://www.asciiart.eu/"
+echo
+
+read -n 1 -s -r -p"Press ENTER to return to menu..." 
+clear
+source LarkMenu
+;;
+3)
+clear
+#break
+;;
+*)
+clear
+echo "That isn't an option, pick another."
+read -n 1 -s -r -p"Press ENTER to try again..."
+source LarkMenu
+;;
+esac
+#done

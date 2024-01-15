@@ -1,0 +1,11 @@
+ Welcome to LARK
+>>>>>>>the Linux Activity to Reinforce Knowledge
+
+Name of Game: bashRunner
+
+Developed by: Brenna Holloway, Dallas DeSimone, Elijah Fraley, Kelsea Canaday
+
+Narrative: You are starting as a cadet bash-runner at the Bash Runner Force, also known as the B.R.F. Your instructor and guide, L.A.R.K, will show you the ropes and teach you how to be a bash runner. Then, you will be sent out on missions to test your skills and climb up the ranks. Watch out for bash-criminals, though- they're lurking in the net.  
+
+Instructions: Type "source ./LarkMenu" to run the LarkMenu script and use "source ./script" to run any script in the future. Enter a selection to begin the game. L.A.R.K. will give more intructions as the game progresses. 
+

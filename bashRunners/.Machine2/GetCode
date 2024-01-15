@@ -1,0 +1,13 @@
+#!/bin/bash
+clear
+echo -e "Format of flag is Runner<answer>\n"
+sleep 1
+read -p "Enter the answer: " ans
+if [ $ans == permission ]
+then
+ echo""
+ echo "That is right. Here is the code: UDRzc1dkCg==" 
+else
+ echo ""
+ echo "That is wrong. Try again."
+fi

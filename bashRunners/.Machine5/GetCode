@@ -1,0 +1,13 @@
+#!/bin/bash
+clear
+echo -e "The answer format is Runner<answer>.\n"
+sleep 1
+read -p "Enter the answer: " ans
+if [ $ans == Lithium ]
+then
+ echo""
+ echo "That is right. Here is the code: TGl0aGl1bTAxCg=="
+else
+ echo ""
+ echo "That is wrong. Try again."
+fi

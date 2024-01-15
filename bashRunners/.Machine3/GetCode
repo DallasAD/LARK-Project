@@ -1,0 +1,13 @@
+#!/bin/bash
+clear
+echo -e "The answer is the number of files with the same line count.\n"
+sleep 1
+read -p "Enter the answer: " ans
+if [ $ans == 4 ]
+then
+ echo""
+ echo "That is right. Here is the code: U21pdGgwMSQK"
+else
+ echo ""
+ echo "That is wrong. Try again."
+fi

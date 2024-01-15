@@ -1,0 +1,7 @@
+#!/bin/bash
+clear
+read -p "Enter string of text to decode: " encoded
+read -p "Enter the name of the new file that will save your decoded text: " file
+echo "$encoded" | base64 -d > Inventory/$file
+echo ""
+echo "Your file has been saved to your Inventory."
